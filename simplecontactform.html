@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Personal Information</h1>
+        </header>
+        <form action="./thanks.html" netlify method="post">
+            <fieldset>
+                <legend>Name</legend>
+                <p>
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname">
+                </p>
+
+                <p>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Information</legend> 
+                 <p>
+                    <label for="E-mail">E-mail:</label>
+                    <input type="text" name="E-mail" id="E-mail">
+                </p>
+                <p>
+                    <label for="Cell-number">Cell-number:</label>
+                    <input type="tel" name="Cell-number" id="Cell-number" minlength="10" maxlength="10">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Type of query</legend>
+                <p>
+                    <label for="query" id="query">Choose a Query Realted:</label>
+                    <select name="type of query">
+                     <option value="Career Opportunity">Career Opportunity</option>
+                     <option value="Business Proposal">Business Proposal</option>
+                     <option value="General Query">General Query</option>
+                     <option value="Complaint">Complaint</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Explain your query</legend>
+               <p>
+                 <label for="Message">Explain in detail about Query</label>
+                 <textarea id="Message" name="Message" rows="5" cols="70">
+                 </textarea>
+               </p>
+           </fieldset>
+           <fieldset>
+            <p>
+                <input type="Submit" value="Submit">
+            </p>
+        </fieldset>
+        </form>
+    </main>
+</body>
+</html>
